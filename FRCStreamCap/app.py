@@ -22,7 +22,7 @@ def get():
     frame = data.getFrame(request.args.get("account"))
     data = data.parseFrame(frame)
 
-    return data
+    return str(data)
 
 if __name__ == "__main__":
     #debug
