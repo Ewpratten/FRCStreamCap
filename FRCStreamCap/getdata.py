@@ -79,8 +79,8 @@ def getFrameFromVid(vid):
     # cv2.imshow("bscore", blue_score)
     # cv2.imshow("match", match)
     # cv2.imshow("match time", match_time)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
 
     return [success, {"blue_score": blue_score, "red_score": red_score, "match": match, "match_time": match_time}]
 
