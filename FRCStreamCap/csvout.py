@@ -23,6 +23,8 @@ while success:
 	
 	filebuffer += "\n"+ str(frame) + "," + str(output["red_score"]) + "," + str(output["blue_score"]) + "," + str(output["match_time"])
 	print(frame)
+	print("\n"+ str(frame) + "," + str(output["red_score"]) + "," + str(output["blue_score"]) + "," + str(output["match_time"]))
+	
 
 file = open(sys.argv[2], "w")
 file.writelines(filebuffer)
