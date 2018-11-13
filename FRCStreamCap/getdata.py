@@ -60,8 +60,8 @@ def getFrame(account:str) -> dict:
     return {"blue_score": blue_score, "red_score": red_score, "match": match, "match_time": match_time}
 
 def getFrameFromVid(vid):
-	success,image = vid.read()
-	image = image_resize(image, width = 1280)
+    success,image = vid.read()
+    image = image_resize(image, width = 1280)
     image = image[0:170, 0:1280]
 
     # create sections
