@@ -14,9 +14,11 @@ filebuffer = "Frame,Red_Score,Blue_Score,Match_Time"
 frame = 0
 
 while success:
-	parsed_frame = data.getFrameFromVid(vid)
-	output = data.parseFrame(parsed_frame[1])
-	
+	try:
+		parsed_frame = data.getFrameFromVid(vid)
+		output = data.parseFrame(parsed_frame[1])
+	except:
+		break
 	success = parsed_frame[0]
 	
 	frame +=1
