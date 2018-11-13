@@ -85,7 +85,7 @@ def getFrameFromVid(vid):
     return [success, {"blue_score": blue_score, "red_score": red_score, "match": match, "match_time": match_time}]
 
 def parseFrame(frame:dict):
-
+    print("parse")
     # Get text
     blue_score_text = pytesseract.image_to_string(frame["blue_score"], lang='eng',
            config='--psm 10 --oem 3 -c tessedit_char_whitelist=0123456789')
