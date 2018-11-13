@@ -61,6 +61,7 @@ def getFrame(account:str) -> dict:
 
 def getFrameFromVid(vid):
     success,image = vid.read()
+    print(success)
     image = image_resize(image, width = 1280)
     image = image[0:170, 0:1280]
 
